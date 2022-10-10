@@ -1,141 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-   
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet"href="style.css" >
-</head>
-<style>
-  @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+<title>form</title>
+<script>
+function myFunction() {
+  var x = document.getElementById("fname").value;
+  var y = document.getElementById("lname").value;
+    var rn = document.getElementById("ronum").value;
+    var d = document.getElementById("dept").value;
+    var yr = document.getElementById("year").value;
+     var dob = document.getElementById("dbirth").value;
+  var gdr = document.getElementById("gndr").value;
+  var mnum = document.getElementById("num").value;
+  var mid = document.getElementById("mail").value;
+  var lknwn = document.getElementById("lang").value;
+   var p =0;
+
+  if(x == "" )
+{
+   alert("Please provide your first name");
+   document.getElementbyId.fname.focus();
+ 
+
+   }
+  if(y == "")
+{
+   alert("Please provide your last name");
+   document.getElementbyId.lname.focus();
+   }
 
 
-form { max-width:420px; margin:50px auto; }
+ if(rn == "")
+{
+   alert("Please provide your roll number");
+   document.getElementbyId.ronum.focus();
+   }
+ if(d == "")
+{
+   alert("Please provide your department");
+   document.getElementbyId.dept.focus();
+   }
+ if(mid == "")
+{
+   alert("Please provide your email");
+   document.getElementbyId.mail.focus();
+   }
+ if(mnum == "")
+{
+   alert("Please provide your mobile number");
+   document.getElementbyId.num.focus();
+   }
+ if(gdr == "")
+{
+   alert("Please provide your gender");
+   document.getElementbyId.gndr.focus();
+   }
+ if(yr == "")
+{
+   alert("Please provide your year of study");
+   document.getElementbyId.year.focus();
+   }
+ if(dob == "")
+{
+   alert("Please provide your date of birth");
+   document.getElementbyId.dbirth.focus();
+   }
 
-.feedback-input {
-  color:black;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 22px;
-  background-color: transparent;
-  border:2px solid #ec2222;
-  transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
-  width:100%;
-  box-sizing: border-box;
-  outline:0;
+
+
+ 
+ else
+{
+     p=1;
+    alert ("Name :" +x+" "+y +"\nRollnumber :" +rn +"\nDepartment :"+d + "\nYear of Study : " +yr + "\nDate of Birth : "+dob + "\nGender : " +gdr + "\nMobile number :"+ mnum+ "\n mail id : " +mid);
 }
-
-.feedback-input:focus { border:2px solid #f00000; }
-
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize:vertical;
+if(p==1)
+{
+    alret("Registered successfully");
+    }
 }
+</script>
 
-[type="submit"] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  width: 100%;
-  background:#f71616;
-  border-radius:5px;
-  border:0;
-  cursor:pointer;
-  color:white;
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
-  transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
+</head> 
+<style>  
+ body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIT5mi3uXG1DgwRbKgsksO9oAbc2wpWXT_lw&usqp=CAU");
 }
-[type="submit"]:hover { background:#ec1717;
- }
-
-
-
-
-/* CSS */
-.button-63 {
-    margin-top: 10px;
-  align-items: center;
-  background-image: linear-gradient(144deg,#9500ff, #2200ff 50%,#00DDEB);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(119, 0, 255, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: #d7fd00;
-  display: flex;
-  font-family: Phantomsans, sans-serif;
-  font-size: 20px;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 19px 24px;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.button-63:active,
-.button-63:hover {
-  outline: 0;
-}
-
-@media (min-width: 768px) {
-  .button-63 {
-    font-size: 24px;
-    min-width: 196px;
-  }
-}
-
 </style>
-<body>
-    <nav id="navbar">
-        <a href="#welcome-section">About</a>
-      
-        <a href="#contact">Contact</a>
-      </nav>
-      
-      <header id="welcome-section">
-        <h1>Vihasini</h1>
-        <h2>Developer  </h2>
-        <h3>Sri Eshwar College of Engineering</h3>
-        <br/>
-        <span>A Tech Enthusiast exploring the world of programming. I aim to be the best of myself and be productive as much as 
-            possible.</span>
-            <button class="button-63" role="button">Hire Me</button>
-      </header>
-      
-  
-      <section id="contact" class="bg-blue">
-        <h1>Contact Me</h1>
-       
-    
-      </section>
-      <form>      
-        <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-        <input name="email" type="text" class="feedback-input" placeholder="Email" />
-        <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-        <input type="submit" value="SUBMIT"/>
-      </form>
-      <footer>
-        Made  </i> by Vihasini
-      </footer>
-      
-      
-      
-      
-   
+
+<body
+style="color:slatebllue";>
+
+<h1 ><center><font-size=40-px>Registration form</font></center></h1>
+
+
+<form >
+<table align="center">
+
+<td  > First name:<span style="color:red">*<span></td>
+
+<td><input type="text" id="fname"   placeholder="enter first name here" required></td>
+
+</tr>
+<tr>
+<td>Last name:<span style="color:red">*<span></td>
+ <td ><input type="text" id="lname" placeholder="enter lastname here"required></td>
+</tr>
+<tr>
+<td >Roll number:<span style="color:red">*<span></td>
+<td><input type="text" id="ronum"  placeholder="enter roll numbere here" maxlength="10" \\\required></td>
+</tr>
+<tr>
+<td>Department:<span style="color:red">*<span></td>
+<td><input type="department" id="dept" Placeholder="Enter your department here" required></td>
+</tr>
+<tr>
+<td>Email id:<span style="color:red">*<span></td>
+  <td><input type="email" id="mail" placeholder="enter maid id here" required><br><br></td>
+</tr>
+<tr>
+<td >Mobile number:<span style="color:red">*<span></td>
+<td><select>
+<option>91+</option>
+<option>81+</option>
+<option>71+</option>
+<option>61+</option>
+</select>
+<input type="mobile number" id="num" placeholder="98********" maxlength="10" required></td>
+</tr>
+<tr>
+ <td>Gender: <span style="color:red">*<span></td>
+  <td><select>
+    <option value="male" id="gndr">male</option>
+    <option value="female" id="gndr">female</option>
+    <option value="other" id="gndr">other</option>
+
+</select></td>
+</tr>
+<tr>
+<td>Pursing year:<span style="color:red">*<span></td>
+ <td> <input type="radio" id="year" name="y1">first year
+  <input type="radio" id="year" name="y1">second year
+  <input type="radio" id="year" name="y1">third year
+  <input type="radio" id="year" name="y1">final year</td>
+</tr>
+<tr>
+<td>Date of birth:<span style="color:red">*<span></td>
+<td><input type="date" id="dbirth" required></td>
+</tr>
+<tr>
+<td>Address:</td>
+<td> <textarea rows = "5" cols = "50" name = "description" placeholder="Type your address here"></textarea></td>
+</tr>
+<tr>
+<td>Languages known:</td>
+  <td><input type="checkbox" id="lang" name="e">
+  <label> english</label>
+  <input type="checkbox" id="lang" name="t">
+  <label> tamil</label>
+  <input type="checkbox" id="lang" name="h">
+  <label> hindi</label></td>
+</tr>
+<tr>
+<td align="center"  height="60">
+<td><button onclick="myFunction()">SUBMIT</button></td>
+</td>
+</tr>
+</form>
 </body>
 </html>
-
-<!-- HTML !-->
