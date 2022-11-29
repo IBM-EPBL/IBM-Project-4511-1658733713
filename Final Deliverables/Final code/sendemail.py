@@ -10,7 +10,7 @@ def sendmail(TEXT,email):
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
     # s.login("Roopakkhan@gmail.com", "Roopakkhan")
-    s.login("kumarpaveen92829@gmail.com", "Praveen@006")
+    s.login("praveenkumar.m2019ece@sece.ac.in", "qwertyuiop123456")
     message  = 'Subject: {}\n\n{}'.format(SUBJECT, TEXT)
     # s.sendmail("Roopakkhan@gmail.com", email, message)
     s.sendmail("kumarpaveen92829@gmail.com", email, message)
